@@ -1,29 +1,26 @@
-html{
+html {
     font-size: 10px;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     position: relative;
     font-family: "Oswald", sans-serif;
     height: 10000px;
 }
 
-
-
-header{
+header {
     position: relative;
     width: 100%;
     height: 7rem;
-    
 }
 
-.h1-header{
+.h1-header {
     width: 100%;
     height: 100%;
     padding: 0 8rem;
@@ -33,7 +30,7 @@ header{
     position: relative;
 }
 
-.h1-header::before{
+.h1-header::before {
     position: absolute;
     content: "";
     left: 0;
@@ -45,145 +42,167 @@ header{
     background-position: center;
 }
 
-main{
+main {
     width: 100%;
     background-color: rgb(255, 248, 248);
     padding-top: 3.5rem;
 }
 
-section{
+section {
     width: 80rem;
     margin: 0 auto;
 }
 
-
 /* ************* BUTTONS *********** */
-.buttons{
+.buttons {
     width: inherit;
     background-color: white;
-    padding: 1.2rem 0 .8rem 5rem;
-    margin-bottom: .5rem; 
+    padding: 1.2rem 0 0.8rem 5rem;
+    margin-bottom: 0.5rem;
 }
 
-
-.button{
+.button {
     font-size: 1.2rem;
-    padding: .5rem .7rem;
+    padding: 0.5rem 0.7rem;
     border: none;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     font-weight: 600;
 }
 
-
-.button-blue{
+.button-blue {
     background-color: rgb(61, 184, 255);
     color: white;
-    border: .1rem solid rgb(0, 162, 255);
+    border: 0.1rem solid rgb(0, 162, 255);
 }
 
-.button-white{
-    border: .1rem solid grey;
+.button-white {
+    border: 0.1rem solid grey;
     color: grey;
     background-color: white;
 }
 
 /* ************* TASKS *********** */
 
-.tasks{
+.tasks {
     background-color: white;
     width: inherit;
     padding: 0rem 5rem;
 }
 
-
-.task{
+.task {
     letter-spacing: 0rem;
 }
 
-.task ul{
+.task ul {
     list-style: none;
     font-size: 1.8rem;
     margin-left: 1rem;
 }
 
-.task-title{
-    letter-spacing: .1rem;
+.task ul li {
+    padding: 0.8rem 0;
+}
+
+.task-title {
+    letter-spacing: 0.1rem;
     padding-left: 2rem;
     position: relative;
     padding-top: 4rem;
 }
 
-.task-title::before{
+.task-title::before {
     content: "";
     position: absolute;
     aspect-ratio: 1/1;
-    left: .5rem;
+    left: 0.5rem;
     top: 60%;
 
     transform: rotate(45deg) translateY(50%);
     width: 1rem;
     height: 1rem;
     /* background-color: red; */
-    border: .2rem solid black;
+    border: 0.2rem solid black;
     border-width: 0 2px 2px 0;
     /* border-width: ; */
 }
 
-
-
-/* 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
+li p {
+    position: relative;
+    width: fit-content;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
+.task ul li p::after {
+    position: absolute;
+    left: calc(100% + 1rem);
     background-color: red;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "Editorial";
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    color: white;
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
+.task:nth-of-type(1) ul li:nth-of-type(1) p::after {
+    background-color: rgb(93, 193, 255);
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
+.task:nth-of-type(2) ul li:nth-of-type(1) p::after {
+    background-color: rgb(93, 193, 255);
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
+.task:nth-of-type(2) ul li:nth-of-type(2) p::after {
+    background-color: rgb(142, 0, 132);
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
+.task:nth-of-type(2) ul li:nth-of-type(3) p::after {
+    background-color: rgb(0, 142, 62);
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
+.task:nth-of-type(2) ul li:nth-of-type(4) p::after {
+    background-color: rgb(195, 124, 0);
 }
 
-.task:nth-of-type(1) ul li:nth-of-type(1){
-    background-color: red;
-} */
+.task:nth-of-type(3) ul li:nth-of-type(1) p::after {
+    background-color: rgb(242, 255, 0);
+}
 
-.check-symbol{
+.task:nth-of-type(3) ul li:nth-of-type(2) p::after {
+    background-color: rgb(238, 0, 223);
+}
+
+.task:nth-of-type(3) ul li:nth-of-type(3) p::after {
+    background-color: rgb(0, 188, 81);
+}
+
+.task:nth-of-type(3) ul li:nth-of-type(4) p::after {
+    background-color: rgb(0, 81, 195);
+}
+
+
+.check-symbol {
     margin-right: 1rem;
     color: lightgreen;
-    padding: 0rem .5rem .2rem;
+    padding: 0rem 0.4rem 0.2rem;
     font-weight: bolder;
     font-size: 1rem;
-    border: .2rem solid lightgreen;
+    border: 0.1rem solid lightgreen;
     border-radius: 1rem;
     width: 1rem;
     height: 1rem;
 }
 
-.cross-symbol{
+.cross-symbol {
     margin-right: 1rem;
 
     color: red;
-    padding: 0rem .5rem .2rem;
+    padding: 0rem 0.4rem 0.2rem;
     font-weight: bolder;
     font-size: 1rem;
-    border: .2rem solid red;
+    border: 0.1rem solid red;
     border-radius: 1rem;
     width: 1rem;
     height: 1rem;
